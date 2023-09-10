@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+}
+
+.wrapper::before {
+    content: "";
+    background-image: url("../img/bg-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.wrapper::after {
+    content: "";
+    background-image: url("../img/bg-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 140vw;
+    height: 100vh;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
